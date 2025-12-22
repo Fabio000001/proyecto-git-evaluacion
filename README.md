@@ -1,5 +1,6 @@
 ### 1. Cuestionario teórico
 1. **¿Qué problema resuelve un sistema de control de versiones?**
+
 Permite gestionar y registrar los cambios realizados en archivos a lo largo del tiempo, facilitando la recuperación de versiones anteriores y el trabajo colaborativo sin pérdida de información.
 2. **Diferencia entre:**
     - Control de versiones local

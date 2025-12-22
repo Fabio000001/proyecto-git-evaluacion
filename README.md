@@ -1,5 +1,6 @@
 ### 1. Cuestionario teórico
 1. **¿Qué problema resuelve un sistema de control de versiones?**
+
 Permite gestionar y registrar los cambios realizados en archivos a lo largo del tiempo, facilitando la recuperación de versiones anteriores y el trabajo colaborativo sin pérdida de información.
 2. **Diferencia entre:**
     - Control de versiones local
@@ -47,7 +48,29 @@ La opción -u (o --set-upstream) establece una relación entre la rama local y l
 Una rama en Git representa una línea independiente de desarrollo que apunta a una serie de commits, permitiendo trabajar en nuevas funcionalidades, correcciones o experimentos sin afectar la rama principal.
 **¿Por qué Git las crea tan rápido?**
 Git crea las ramas muy rápido porque internamente solo son punteros ligeros a commits, no copias completas de los archivos, lo que hace que su creación y manejo sea casi inmediato.
+<<<<<<< HEAD
 
+=======
+### 8. Fusión de ramas
+**¿Qué tipo de merge se ha producido?**
+Se ha producido un merge fast-forward, en el que Git simplemente avanzó el puntero de la rama actual hasta el último commit de la rama desarrollo sin crear un commit de fusión.
+**¿Por qué no hubo conflictos (si es el caso)?**
+No hubo conflictos porque la rama actual no tenía cambios propios que divergieran de desarrollo, por lo que Git pudo aplicar los commits de forma directa y automática.
+### 9. Protección de rama main en repositorio remoto
+**Describe brevemente las opciones más relevantes disponibles al proteger una rama, incluyendo al menos:**
+- **Obligación de usar Pull Requests:** Impide hacer commits directos sobre la rama protegida y obliga a que todos los cambios se integren mediante una Pull Request.
+- **Requerimiento de revisiones antes de fusionar:** Exige que uno o más revisores aprueben los cambios antes de que puedan fusionarse en la rama protegida.
+- **Restricción de quién puede aprobar los cambios:** Permite definir usuarios o equipos específicos que tienen permiso para aprobar las Pull Requests, aumentando el control y la seguridad.
+- **Descartar las aprobaciones de solicitudes obsoletas cuando se suban nuevos commits:** Hace que las aprobaciones previas se invaliden si se añaden nuevos commits, obligando a una nueva revisión del código actualizado.
+**Indica qué opción de revisión es la más adecuada para esta práctica.**
+La opción más adecuada es requerir revisiones antes de fusionar, configurando al menos una aprobación.
+**Justifica la elección teniendo en cuenta que se trata de un proyecto educativo individual / académico.**
+Aunque el proyecto sea individual, requerir revisiones ayuda a simular un entorno profesional real, fomenta buenas prácticas y evita errores accidentales en la rama main, incluso si la revisión la realiza el propio autor desde otra rama.
+**Explica la diferencia entre:**
+- **Requerir revisiones:** Obliga a que una Pull Request sea revisada y aprobada antes de poder fusionarse, aumentando el control y la calidad del código.
+- **No requerir revisiones:** Permite fusionar directamente los cambios sin aprobación previa, lo que es más rápido pero reduce el control y aumenta el riesgo de errores.
+**Describe y demuestra la secuencia correcta de pasos para modificar la rama main cuando está protegida:**
+>>>>>>> desarrollo
 
 ## Autor: Fabio Acosta Fuentes
 ## Fecha: 21/12/2025
